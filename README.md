@@ -26,37 +26,28 @@ degree-verification/
 ```
 npm init -y
 ```
-
 2. **Install Hardhat & TypeScript support:**
 ```
 npm install --save-dev hardhat@^2.17.0 typescript ts-node @types/node
 ```
-
 3. **Install Ethers.js, Waffle & Testing tools::**
 ```
 npm install --save-dev @nomiclabs/hardhat-waffle@^2.0.3 @nomiclabs/hardhat-ethers@^2.0.5 ethers@^5.7.0 chai @types/chai @types/mocha
 ```
-
-
 4. **Compile smart contracts:**
 ```
 npx hardhat compile
 ```
-
-
 5. **Start a local blockchain:**
 ```
 npx hardhat node
 ```
-
-
 6. **Deploy the contract:**
 ```
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
-
 **Expected Output:**
-Deploying contracts with account: 0x...
-DegreeVerification deployed at: 0x...
+- Deploying contracts with account: 0x...
+- DegreeVerification deployed at: 0x...
 
