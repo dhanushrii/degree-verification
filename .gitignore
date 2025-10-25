@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+
+# Hardhat build files
+artifacts/
+cache/
+typechain/
+
+# Environment variables
+.env
+
+# VSCode settings
+.vscode/
