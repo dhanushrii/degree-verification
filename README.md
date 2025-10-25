@@ -13,9 +13,9 @@ This project contains a Solidity smart contract for degree verification and a Ha
 **Project Structure**
 degree-verification/
 ├─ contracts/          # Solidity contracts (.sol)
-│  └─ DegreeVerification.sol
+  │ DegreeVerification.sol
 ├─ scripts/            # Deployment scripts (.js or .ts)
-│  └─ deploy.js
+  | deploy.js
 ├─ hardhat.config.js   # Hardhat configuration
 ├─ package.json        # Node.js project file
 └─ README.md           
