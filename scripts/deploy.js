@@ -1,8 +1,8 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const [deployer] = await ethers.getSigners();
-  console.log("Deploying contracts with account:", deployer.address);
+  const [deployer] = await ethers.getSigners(); //list of accounts - Return first one.
+  console.log("Deploying contracts with account:", deployer.address); 
 
   const Degree = await ethers.getContractFactory("DegreeVerification");
   const contract = await Degree.deploy();
