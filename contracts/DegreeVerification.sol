@@ -9,15 +9,15 @@ contract DegreeVerification {
         bool verified;
     }
 
-    mapping(uint256 => Degree) public degrees; #mapping degree id with Degree
+    mapping(uint256 => Degree) public degrees; //mapping degree id with Degree
     uint256 public degreeCount;
-    address public owner; #Stores Ethereum address of the contract deployer
+    address public owner; //Stores Ethereum address of the contract deployer
 
-    constructor() { #run once during deployment
+    constructor() { //run once during deployment
         owner = msg.sender;
     }
 
-    modifier onlyOwner() { #reusable function
+    modifier onlyOwner() { //reusable function
         require(msg.sender == owner, "Not authorized");
         _;
     }
